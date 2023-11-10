@@ -1,0 +1,116 @@
+<!-- Basic page template -->
+<!DOCTYPE html>
+<head html-src="/comp/head.html">
+    <!-- Don't crawl this page -->
+    <meta name="robots" content="noindex">
+</head>
+<body>
+    <header html-src="/comp/header.html"></header>
+    <main>
+        <section class="notification" html-src="/comp/notification.html">
+            <h3>This is a test notification</h3>
+            <p>However, real notification should be put in <code>/comp/notification</code>. Style in notification can be edited in .notification</p>
+        </section>
+
+        <section class="welcome">
+            <img src="https://cdn.discordapp.com/attachments/1064092743745409034/1066626612424085514/2023-01-21_23.03.55.png" alt="">
+            <h1>Page for developers</h1>
+        </section>
+
+        <h1>Front-end</h1>
+        <details>
+            <summary>Flex box wit column layout</summary>
+            <section class="secCol">
+                <div>
+                    <h1>.secCol</h1>
+                    <p>Usable with image on one side (image width will covers the entire column with .noPadding class).</p>
+                    <p>.right class to align elements to the right</p>
+                    <p>This can be ultilized for its padding</p>
+                    <p>Text will be alligh in the middle vertically. To align from the top, use with additional .longText</p>
+                </div>
+                <div>
+                    <img src="https://cdn.discordapp.com/attachments/1075495496560410655/1136306010542325770/map.png" alt="">
+                </div>
+            </section>
+        </details>
+
+        <details>
+            <summary>Section with center layout</summary>
+            <section class="secCen">
+                <h1>.secCen > div.secCol</h1>
+                <p>This is a mix with secCol as a child element.</p>
+                <div class="secCol">
+                    <div>
+                        <h1>1</h1>
+                        <p>Text here does not center</p>
+                    </div>
+                    <div>
+                        <h1>2</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus distinctio omnis voluptates vero incidunt sit explicabo quia eos suscipit totam sapiente blanditiis odio, nihil fugit ex, corporis saepe. Eos, omnis.</p>
+                    </div>
+                </div>
+            </section>
+        </details>
+
+        <details>
+            <summary>Section with box</summary>
+            <section class="secBox secCol secAlignStart">
+                <div>
+                    <h2>.secBox .secCol .secAlignStart</h2>
+                    <p>Create a little focal point to the page</p>
+                </div>
+                <div>
+                    <hr>
+                    <p>The height of the HR element also matches with <code>h2</code>.</p>
+                </div>
+            </section>
+        </details>
+
+        <details>
+            <summary>Section with long text so must align start</summary>
+            <section class="secCol secAlignStart">
+                <div>
+                    <h1>.secCol .secAlignStart</h1>
+                    <p>Use in addition with secCol, to align-self self-start</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At optio necessitatibus fugiat molestiae tempore dolorem error quod commodi molestias debitis laudantium, officiis totam magni saepe voluptatum enim distinctio corporis! Est!</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex dolorum ratione quam voluptatum eligendi. Vel totam consequuntur asperiores et nemo natus, accusantium porro impedit possimus dolore obcaecati eum, accusamus tenetur.</p>
+                </div>
+                <div>
+                    <h1>It is a very short on one side</h1>
+                    <p>Now you can see how it allign from the start</p>
+                </div>
+            </section>
+        </details>
+
+        <h1>Back-end</h1>
+        <ul>
+            <li>Node JS version when writing this: <code>v19.4.0</code></li>
+        </ul>
+
+        <h2>File system</h2>
+        <p>Each folder with <code>index.js</code> is a valid URL to connect to from root. In each folder, it is possible to provide with custom <code>style.css</code> to overwrite the default <code>/style.css</code>.</p>
+        <p>When creating a new file that you wish to show up in the Release, you must explcitly add it to <code>build/build.js</code></p>
+        <p>When creating a new file, it should be named with singular noun. It is <code>script.js</code>, not <code>script<u>s</u>.js</code>. Folders and URL folders are not subject to this convention.</p>
+
+        <h2>Translations</h2>
+        <p>Translation requires you to build the website with the build script.</p>
+        <p>In each folder, there will be an <code>index.html</code> files to dictate the layout and the translation keys. In each folder, there will be <code>.json</code> files with language code.</p>
+        <p>Translation keys will be replaced with translated content in that perspective language, then put into the correct folder according to the key <code>URL</code>. Translation key should be in English.</p>
+        <p>Because the replace is pure plain text, it is recommened to put translation key inside <code>&gt;translationKey&smt;</code> for keys with confusable name. The best practice is to name keys with long enough snake_case name. Snake case is to prevent conflict with CSS camel case.</p>
+        <p>A certain control key will be ignored (like <code>URL</code>)</p>
+        <p>transContent</p>
+
+        <h2>Build script</h2>
+        <p>The build script is important in a sense that it will put all <code>html-src</code> into the element itself, removing the need to execute script to fetch, hence help with SEO because the meta tags are present.</p>
+
+        <h2>Development</h2>
+        <p>To build a complete website, run <code>node build/build.js</code> (without the release flag). The script will build everything to <code>build/Release</code>. Noted that with this kind of dev environment, you need to build everytime you make an edit.</p>
+        <p>Due to CORS, you must run a static server to fully see the page. Python3's simple HTTP server was known to have problem with encoding, so it is recommended to use Node JS static server with <code>npx http-server -o ./</code></p>
+
+        <h2>Deployment and Release</h2>
+        <p>When wishing to release, run <code>build/build.js</code>. The script will simply copy pre-specified files and folders to <code>build/Release</code> (ignored folder in <code>.GITIGNORE</code>). The script will then apply translation. After that, the script will switch to Release branch, then move the files back to the main folder. Finally, it will auto-commit and push to the cloud, before returning back to the main branch.</p>
+        <p class="secBox">PLEASE DO NOT WORK ON RELEASE BRANCH!</p>
+    </main>
+    <footer html-src="/comp/footer.html"></footer>
+</body>
+<script src="/script.js"></script>

@@ -1,0 +1,26 @@
+<!-- Website to redirect to main government page -->
+<!DOCTYPE html>
+<script>
+    // list of shortened links, run script first before loading UI
+    const LINKS = {
+    }
+    // Link shortener
+    let hash = window.location.hash.substring(1).split('-');
+    if (typeof LINKS[hash[0]] == 'string') {
+        // redirect and set link
+        document.getElementById('redirect').setAttribute('href', LINKS[hash[0]])
+        window.location.replace(LINKS[hash[0]]);
+    } else if (typeof LINKS[hash[0]] == 'function')
+        // execute function
+        window.location.replace(LINKS[hash[0]]());
+    else
+        // go to home
+        window.location.replace('./home');
+</script>
+<head>
+    <meta name="description" content="Lamoncton">
+</head>
+<body>
+    <!-- Todo: change this to selecting language -->
+    <p>If you are not being redirected, please click <a id="redirect" href="./home">Here</a></p>
+</body>

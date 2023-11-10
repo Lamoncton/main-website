@@ -10,8 +10,19 @@ const argv = process.argv.slice(2),
     languages = ['EN', 'VI'],
     releaseItems = [
         // items to put in the release folder
+        'about',
+        'dev',
+        'home',
+        'programs',
         '.GITIGNORE',
-        'LICENSE'
+        '404.html',
+        'CNAME',
+        'index.html',
+        'LICENSE',
+        'robots.txt',
+        'script.js',
+        'sitemap.txt',
+        'style.css'
     ];
 let version = fs.readFileSync(vPath, 'utf-8').split('.');
 
