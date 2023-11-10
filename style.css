@@ -3,19 +3,28 @@
 }
 
 :root {
-    --color-dark: #390f33ff;
-    --color-dark-shine: #671458ff;
-    --color-dark-bright: #db2466ff;
-    --color-theme: #fe902fff;
-    --color-bright: #fcebd1ff;
-    --color-green: #bfebb8ff;
+    /* https://coolors.co/1a6192-f27f21-f8fcff-f1f1f1-00b2dc-fab31d-227ebd-3798db-924b1a-bd7a37 */
+    --color-dark: #1A6192;
+    --color-dark-shine: #3798DB;
+    --color-dark-bright: #00B2DC;
+    --color-theme: #F27F21;
+    --color-bright: #FAB31D;
+    --color-green: #30BD22;
     --color-red: #ff8486ff;
-    --color-white: #ffffff;
+    --color-white: #F8FCFF;
+    --color-grey: #F1F1F1;
     --color-black: #000000;
 
-    --nyanza: #e0ebc3ff;
-    --hunyadi-yellow: #feb952ff;
-    --sandy-brown: #fe9a42ff;
+    --lapis-lazuli: #1a6192ff;
+    --safety-orange: #f27f21ff;
+    --white: #f8fcffff;
+    --antiflash-white: #f1f1f1ff;
+    --aero: #00b2dcff;
+    --xanthous: #fab31dff;
+    --steel-blue: #227ebdff;
+    --celestial-blue: #3798dbff;
+    --brown: #924b1aff;
+    --copper: #bd7a37ff;
 
     --font-heading: 'Hanken Grotesk', sans-serif;
     --font-family: 'Inter', sans-serif;;
@@ -94,8 +103,6 @@ html {
 
 body {
     margin: 0;
-    background-color: var(--color-bg);
-    color: var(--color-fg);
 }
 
 nav {
@@ -108,7 +115,7 @@ nav {
     padding: 0;
     display: flex;
     align-items: center;
-    background-color: var(--color-dark);
+    background-color: var(--color-grey);
 }
 nav * { font-family: var(--font-heading); }
 nav a {
@@ -143,7 +150,7 @@ main > hr {
 footer {
     display: flex;
     padding: 1rem;
-    background-color: var(--color-dark-shine);
+    background-color: var(--color-dark);
     color: var(--color-bright);
 }
 footer div { margin: 0 1rem; }
