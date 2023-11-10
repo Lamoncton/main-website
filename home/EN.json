@@ -1,0 +1,27 @@
+{
+    "URL": "home",
+
+    "welcome_heading": "Lamoncton homepage",
+    "intro_heading": "intro_heading",
+    "intro_para": "intro_para",
+
+    "impro_heading": "impro_heading",
+    "impro_para": "impro_para",
+
+    "curCen_heading": "curCen_heading",
+    "curCen_para": "curCen_para",
+    "curCen1_heading": "curCen1_heading",
+    "curCen1_para": "curCen1_para",
+    "curCen2_heading": "curCen2_heading",
+    "curCen2_para": "curCen2_para",
+    "curCen3_heading": "curCen3_heading",
+    "curCen3_para": "curCen3_para",
+    "curCen4_heading": "curCen4_heading",
+    "curCen4_para": "curCen4_para",
+
+    "longExp_heading": "",
+    "longExp_para": "",
+
+    "imgMsg_heading": "",
+    "imgMsg_para": ""
+}
