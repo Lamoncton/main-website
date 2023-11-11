@@ -3,18 +3,6 @@
 }
 
 :root {
-    /* https://coolors.co/1a6192-f27f21-f8fcff-f1f1f1-00b2dc-fab31d-227ebd-3798db-924b1a-bd7a37 */
-    --color-dark: #1A6192;
-    --color-dark-shine: #3798DB;
-    --color-dark-bright: #00B2DC;
-    --color-theme: #F27F21;
-    --color-bright: #FAB31D;
-    --color-green: #30BD22;
-    --color-red: #ff8486ff;
-    --color-white: #F8FCFF;
-    --color-grey: #F1F1F1;
-    --color-black: #000000;
-
     --lapis-lazuli: #1a6192ff;
     --safety-orange: #f27f21ff;
     --white: #f8fcffff;
@@ -25,6 +13,16 @@
     --celestial-blue: #3798dbff;
     --brown: #924b1aff;
     --copper: #bd7a37ff;
+    /* https://coolors.co/1a6192-f27f21-f8fcff-f1f1f1-00b2dc-fab31d-227ebd-3798db-924b1a-bd7a37 */
+    --color-priB: var(--safety-orange);
+    --color-priD: var(--lapis-lazuli);
+    --color-secB: var(--xanthous);
+    --color-secD: var(--aero);
+
+    --color-white: var(--white);
+    --color-gray: var(--antiflash-white);
+    --color-green: #46DB37;
+    --color-red: #E63462;
 
     --font-heading: 'Hanken Grotesk', sans-serif;
     --font-family: 'Inter', sans-serif;;
@@ -50,9 +48,9 @@ article {
 
 button {
     border-radius: 1rem;
-    border: 0px solid var(--color-theme);
+    border: 0px solid var(--color-priB);
     cursor: pointer;
-    background-color: var(--color-bright-theme);
+    background-color: var(--color-priD);
     font-family: var(--font-family);
     font-size: var(--font-size);
 }
@@ -61,7 +59,7 @@ details {
     border-left: none;
     padding-left: 1rem;
 }
-details[open] { border-left: 0.5rem solid var(--color-theme); }
+details[open] { border-left: 0.5rem solid var(--color-secB); }
 
 dl > dt { font-weight: bold; }
 
@@ -69,7 +67,7 @@ h1, h2, h3 { font-family: var(--font-heading); }
 h1 { font-size: 2rem; } /* User agent section overwrite */
 
 input {
-    border: 1px solid var(--color-theme);
+    border: 1px solid var(--color-secB);
     border-radius: 0;
     outline: 0;
     background-color: var(--color-bg);
@@ -81,11 +79,10 @@ input {
 summary {
     cursor: pointer;
     padding: 1rem;
-    color: var(--color-theme);
+    color: var(--color-priD);
 }
 summary:hover, details[open] summary {
-    background-color: var(--color-theme);
-    color: var(--color-bright-theme);
+    background-color: var(--color-secB);
 }
 
 table {
@@ -115,12 +112,12 @@ nav {
     padding: 0;
     display: flex;
     align-items: center;
-    background-color: var(--color-grey);
+    background-color: var(--color-secB);
 }
 nav * { font-family: var(--font-heading); }
 nav a {
     text-decoration: none;
-    color: var(--color-theme);
+    color: var(--color-priD);
     align-items: center;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
@@ -129,8 +126,7 @@ nav a {
     text-align: center;
 }
 nav a:hover {
-    background-color: var(--color-theme);
-    color: var(--color-dark);
+    background-color: var(--color-priB);
 }
 nav > div {
     /* Important to overdrive class */
@@ -150,8 +146,7 @@ main > hr {
 footer {
     display: flex;
     padding: 1rem;
-    background-color: var(--color-dark);
-    color: var(--color-bright);
+    background-color: var(--color-priD);
 }
 footer div { margin: 0 1rem; }
 footer img { height: 3rem; }
@@ -174,9 +169,9 @@ footer p { color: var(--color-white) }
     background-color: var(--color-theme);
 }
 
-.secBox { background-color: var(--color-bright); }
+.secBox { background-color: var(--color-gray); }
 .secBox h1,
-.secBox h2 { color: var(--color-dark-bright); }
+.secBox h2 { color: var(--color-priB); }
 .secBox hr {
     margin: 2rem 0;
 }
@@ -206,13 +201,15 @@ footer p { color: var(--color-white) }
 .secBgImg {
     /* Section with background image and overlay text */
     background-size: cover;
-    padding: 5rem 50vw 5rem 0;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 .secBgImg div {
     margin: 0;
     padding: 1rem;
+    width: fit-content;
     background-color: #000000A0;
-    color: var(--color-bright);
+    color: var(--color-priB);
 }
 
 .secCen {
@@ -257,24 +254,4 @@ footer p { color: var(--color-white) }
 .secAlignStart div {
     /* section with long text */
     align-self: self-start;
-}
-
-.welcome {
-    position: relative;
-    width: 100%;
-    margin: 0;
-}
-.welcome img {
-    display: block;
-    object-fit: cover;
-    width: 100%;
-    height: 20rem;
-}
-.welcome h1 {
-    position: absolute;
-    top: 8rem;
-    left: 0;
-    padding: 1rem 1rem;
-    background-color: #000000A0;
-    color: var(--color-theme);
 }
