@@ -203,6 +203,7 @@ footer p { color: var(--color-white) }
 .secBgImg {
     /* Section with background image and overlay text */
     background-size: cover;
+    background-position: center;
     padding-top: 5rem;
     padding-bottom: 5rem;
 }

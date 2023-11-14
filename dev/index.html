@@ -6,7 +6,7 @@
 </head>
 <body>
     <header html-src="/comp/header.html"></header>
-    <main>
+    <main html-src="/comp/notification.html">
         <section class="notification" html-src="/comp/notification.html">
             <h3>This is a test notification</h3>
             <p>However, real notification should be put in <code>/comp/notification</code>. Style in notification can be edited in .notification</p>
@@ -111,8 +111,8 @@
 
         <h2>Deployment and Release</h2>
         <p>When wishing to release, run <code>build/build.js</code>. The script will simply copy pre-specified files and folders to <code>build/Release</code> (ignored folder in <code>.GITIGNORE</code>). The script will then apply translation. After that, the script will switch to Release branch, then move the files back to the main folder. Finally, it will auto-commit and push to the cloud, before returning back to the main branch.</p>
-        <p class="secBox">PLEASE DO NOT WORK ON RELEASE BRANCH!</p>
-    </main>
+        <p class="secBox">PLEASE DO NOT WORK ON RELEASE BRANCH!</p>    </main>
+    <div html-src="/comp/signup.html"></div>
     <footer html-src="/comp/footer.html"></footer>
 </body>
 <script src="/script.js"></script>
