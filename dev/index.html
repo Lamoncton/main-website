@@ -4,6 +4,9 @@
 <head html-src="/comp/head.html">
     <!-- Don't crawl this page -->
     <meta name="robots" content="noindex">
+
+    <!-- Example of how the html-src is inserted -->
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <header html-src="/comp/header.html"></header>
@@ -106,31 +109,29 @@
         <p>The build script is important in a sense that it will put all <code>html-src</code> into the element itself, removing the need to execute script to fetch, hence help with SEO because the meta tags are present.</p>
         <p>The build script is Static Wind which can be found <a href="https://github.com/LukeNK/Static-Wind">here on GitHub</a>.</p>
         <h3>Build config in <code>/Static-Wind/config.json</code></h3>
-        <p><code>
-            {
-                "languages": ["en", "vi"],
-                "masterTranslation": "comp/",
-                "releaseItems": [
-                    "asset",
+        <code>{
+    "languages": ["en", "vi"],
+    "masterTranslation": "comp/",
+    "releaseItems": [
+        "asset",
 
-                    "about",
-                    "dev",
-                    "home",
-                    "programs",
+        "about",
+        "dev",
+        "home",
+        "programs",
 
-                    "404.html",
-                    "index.html",
-                    "script.js",
-                    "style.css",
+        "404.html",
+        "index.html",
+        "script.js",
+        "style.css",
 
-                    ".GITIGNORE",
-                    "CNAME",
-                    "LICENSE",
-                    "robots.txt",
-                    "sitemap.txt"
-                ]
-            }
-        </code></p>
+        ".GITIGNORE",
+        "CNAME",
+        "LICENSE",
+        "robots.txt",
+        "sitemap.txt"
+    ]
+}</code>
 
         <h2>Development</h2>
         <p>To build a complete website, run <code>node build/build.js</code> (without the release flag). The script will build everything to <code>build/Release</code>. Noted that with this kind of dev environment, you need to build everytime you make an edit.</p>
