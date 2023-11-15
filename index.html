@@ -1,26 +1,41 @@
 <!DOCTYPE html>
-<html lang="lang_code">
+<html>
 <head html-src="/comp/head.html">
     <style>
-        body {
-            height: 100%;
-            width: 100vw;
-            /* background-position: center; */
-            background-size: cover;
-            background-image: url();
+        #topLogo {
+            margin: auto;
+            width: 50%;
+            max-width: 25rem;
+        }
+        #topLogo img {
+            width: 100%;
         }
     </style>
     <meta name="description" content="Lamoncton">
 </head>
 <body>
+    <div id="topLogo">
+        <img src="/asset/logo.png" alt="Lamoncton logo">
+    </div>
+
     <section class="secCol secAlignStart">
-        <div>
+        <div lang="en">
             <h1>English</h1>
-            <p>Lamoncton is currently being developed for two languages: English and Vietnamese.</p>
+            <p>Lamoncton website is currently being developed for two languages: English and Vietnamese.</p>
         </div>
-        <div>
+        <div lang="vi">
             <h1>Tiếng Việt</h1>
             <p>Hiện tại trang web của Lamoncton đang được phát triển cho hai ngôn ngữ: tiếng Anh và tiếng Việt.</p>
+        </div>
+    </section>
+
+    <!-- Split to make two buttons allign vertically -->
+    <section class="secCol">
+        <div lang="en">
+            <a class="buttonA" href="/home/">View page in English</a>
+        </div>
+        <div lang="vi">
+            <a class="buttonA" href="/trang-chu/">Xem trang trong tiếng Việt</a>
         </div>
     </section>
 </body>
