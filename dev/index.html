@@ -133,13 +133,11 @@
     ]
 }</code>
 
-        <h2>Development</h2>
-        <p>To build a complete website, run <code>node build/build.js</code> (without the release flag). The script will build everything to <code>build/Release</code>. Noted that with this kind of dev environment, you need to build everytime you make an edit.</p>
-        <p>Due to CORS, you must run a static server to fully see the page. Python3's simple HTTP server was known to have problem with encoding, so it is recommended to use Node JS static server with <code>npx http-server -o ./</code></p>
-
-        <h2>Deployment and Release</h2>
-        <p>When wishing to release, run <code>build/build.js</code>. The script will simply copy pre-specified files and folders to <code>build/Release</code> (ignored folder in <code>.GITIGNORE</code>). The script will then apply translation. After that, the script will switch to Release branch, then move the files back to the main folder. Finally, it will auto-commit and push to the cloud, before returning back to the main branch.</p>
-        <p class="secBox">PLEASE DO NOT WORK ON RELEASE BRANCH!</p>    </main>
+        <h2>Development and Deployment</h2>
+        <p>Please carefully check Static Wind's README to grasp the understand of the build process. In short, the build process will resolve all translation string and <code>html-src</code> before copy it to the Release branch.</p>
+        <p>To publish code, run <code>node Static-Wind/build.js</code> with the flag <code>R</code>. (You have to manually type it out for security reasons)</p>
+        <p class="secBox">PLEASE DO NOT WORK ON RELEASE BRANCH!</p>
+    </main>
     <div html-src="/comp/signup.html"></div>
     <footer html-src="/comp/footer.html"></footer>
 </body>
