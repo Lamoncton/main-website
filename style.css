@@ -26,7 +26,7 @@
 
     --font-heading: 'Hanken Grotesk', sans-serif;
     --font-family: 'Inter', sans-serif;;
-    --font-size: 19px;
+    --font-size: 16px;
 }
 
 /* Individual element */
@@ -200,6 +200,11 @@ footer p { color: var(--color-white) }
     display: none;
 }
 
+.secAlignStart div {
+    /* section with long text */
+    align-self: self-start !important;
+}
+
 .secBgImg {
     /* Section with background image and overlay text */
     background-size: cover;
@@ -253,8 +258,3 @@ footer p { color: var(--color-white) }
     align-self: center;
 }
 .secColImgText { padding: 1rem; }
-
-.secAlignStart div {
-    /* section with long text */
-    align-self: self-start;
-}
