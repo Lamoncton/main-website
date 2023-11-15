@@ -2,7 +2,17 @@
 <html lang="lang_code">
 <head html-src="/comp/head.html"></head>
 <body>
-    <header html-src="/comp/header.html"></header>
+    <header html-src="/comp/header.html">
+        <style>
+            #comments {
+                flex-wrap: wrap;
+            }
+            .comDiv {
+                flex: 1 1 20rem;
+                margin: 1rem;
+            }
+        </style>
+    </header>
     <main html-src="/comp/notification.html">
         <section class="secBgImg" style="background-image: url(/asset/IMG_0393.jpg);">
             <div>
@@ -89,6 +99,53 @@
                 <h1>longExp_heading</h1>
                 <p>longExp_para</p>
             </div>
+        </section>
+
+        <section class="secCen">
+            <h1>com_h</h1>
+            <p>com_p</p>
+            <section id="comments" class="secCol secAlignStart">
+                <div class="secBox comDiv">
+                    <h3>com1_h</h3>
+                    <p>com1_p</p>
+                    <p class="comA">com1_a</p>
+                </div>
+                <div class="secBox comDiv">
+                    <h3>com2_h</h3>
+                    <p>com2_p</p>
+                    <p class="comA">com2_a</p>
+                </div>
+                <div class="secBox comDiv">
+                    <h3>com3_h</h3>
+                    <p>com3_p</p>
+                    <p class="comA">com3_a</p>
+                </div>
+                <div class="secBox comDiv">
+                    <h3>com4_h</h3>
+                    <p>com4_p</p>
+                    <p class="comA">com4_a</p>
+                </div>
+                <div class="secBox comDiv">
+                    <h3>com5_h</h3>
+                    <p>com5_p</p>
+                    <p class="comA">com5_a</p>
+                </div>
+                <div class="secBox comDiv">
+                    <h3>com6_h</h3>
+                    <p>com6_p</p>
+                    <p class="comA">com6_a</p>
+                </div>
+                <div class="secBox comDiv">
+                    <h3>com7_h</h3>
+                    <p>com7_p</p>
+                    <p class="comA">com7_a</p>
+                </div>
+                <div class="secBox comDiv">
+                    <h3>com8_h</h3>
+                    <p>com8_p</p>
+                    <p class="comA">com8_a</p>
+                </div>
+            </section>
         </section>
     </main>
     <div html-src="/comp/signup.html"></div>
