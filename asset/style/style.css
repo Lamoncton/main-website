@@ -145,10 +145,14 @@ main > hr {
 
 footer {
     display: flex;
+    flex-wrap: wrap;
     padding: 1rem;
     background-color: var(--color-priD);
 }
-footer div { margin: 0 1rem; }
+footer div {
+    flex: 1 1 20rem;
+    margin: 0 1rem;
+}
 footer img { height: 3rem; }
 footer h3 { color: var(--color-green) }
 footer p { color: var(--color-white) }
