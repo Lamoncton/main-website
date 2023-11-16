@@ -155,11 +155,15 @@ footer > div {
 }
 #footerLogo {
     align-self: center;
+    display: flex; /* Center image */
     flex-grow: 0;
     flex-basis: 5rem;
     /* Responsive setting with flex-basis */
 }
-footer img { height: 3rem; }
+#footerLogo > img {
+    margin: auto;
+    height: 3rem
+ }
 footer h3 { color: var(--color-green) }
 footer p { color: var(--color-white) }
 
