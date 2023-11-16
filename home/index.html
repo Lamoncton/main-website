@@ -5,21 +5,11 @@
     <header html-src="/comp/header.html">
         <link rel="stylesheet" href="/asset/style/flip-card.css">
         <style>
-            /* Overwrite animation */
-            .flip-card {
+            .curCen {
                 border-radius: 1rem;
-                height: 20rem;
             }
-            .flip-card > .inner {
-                border-radius: inherit;
-            }
-            .flip-card > .inner > .front {
-                text-align: center;
-            }
-            .flip-card > .inner > .front,
-            .flip-card > .inner > .back {
-                border-radius: inherit;
-                height: inherit;
+            @media (min-width: 50rem) {
+                .curCen { height: 20rem; }
             }
 
             #comments {
@@ -73,7 +63,7 @@
             <h1>curCen_heading</h1>
             <p>curCen_para</p>
             <section class="secCol secAlignStart noPadding">
-                <div class="flip-card">
+                <div class="flip-card curCen">
                     <div class="inner" style="background-color: var(--color-green);">
                         <div class="front">
                             <h2>curCen1_heading</h2>
@@ -84,7 +74,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="flip-card">
+                <div class="flip-card curCen">
                     <div class="inner"" style="background-color: var(--color-red);">
                         <div class="front">
                             <h2>curCen2_heading</h2>
@@ -97,7 +87,7 @@
                 </div>
             </section>
             <section class="secCol secAlignStart noPadding">
-                <div class="flip-card">
+                <div class="flip-card curCen">
                     <div class="inner" style="background-color: var(--color-secB);">
                         <div class="front">
                             <h2>curCen3_heading</h2>
@@ -108,7 +98,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="flip-card">
+                <div class="flip-card curCen">
                     <div class="inner" style="background-color: var(--color-secD);">
                         <div class="front">
                             <h2>curCen4_heading</h2>
