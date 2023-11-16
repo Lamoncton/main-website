@@ -26,6 +26,7 @@
     width: 100%;
     height: fit-content;
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden; /* Safari */
 }
 
 /* Style the front side (fallback if image is missing) */
