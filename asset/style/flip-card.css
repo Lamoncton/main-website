@@ -10,6 +10,7 @@
 }
 .flip-card > .inner > .front,
 .flip-card > .inner > .back {
+    padding: 1rem;
     border-radius: inherit;
     height: inherit;
 }
