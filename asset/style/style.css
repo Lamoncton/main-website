@@ -149,9 +149,15 @@ footer {
     padding: 1rem;
     background-color: var(--color-priD);
 }
-footer div {
+footer > div {
     flex: 1 1 20rem;
     margin: 0 1rem;
+}
+#footerLogo {
+    align-self: center;
+    flex-grow: 0;
+    flex-basis: 5rem;
+    /* Responsive setting with flex-basis */
 }
 footer img { height: 3rem; }
 footer h3 { color: var(--color-green) }
