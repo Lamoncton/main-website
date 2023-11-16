@@ -21,9 +21,25 @@
                 margin: 1rem;
             }
         </style>
+
+        <link rel="stylesheet" href="/asset/style/slideshow.css">
+        <script src="/asset/script/slideshow.js"></script>
+        <script>
+            // Add slideshow
+            slideshows.welcomeBanner = {
+                images: [
+                    '/asset/image/horse.jpg',
+                    '/asset/image/IMG_1093.png',
+                ]
+            }
+        </script>
     </header>
     <main html-src="/comp/notification.html">
-        <section class="secBgImg" style="background-image: url(/asset/image/IMG_1093.png);">
+        <section
+            id="welcomeBanner"
+            class="secBgImg"
+            style="background-image: url(/asset/image/IMG_1093.png);"
+        >
             <div>
                 <h1>welcome_heading</h1>
             </div>
