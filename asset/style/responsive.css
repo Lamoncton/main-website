@@ -1,0 +1,6 @@
+@media (max-width: 40rem) {
+    #footerLogo {
+        /* Make the other element to new line */
+        flex-basis: 40rem;
+    }
+}
