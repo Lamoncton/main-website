@@ -145,7 +145,7 @@ nav > div {
     background-color: var(--color-priB);
 }
 
-main { padding-top: 2rem; }
+main { padding-top: 3rem; }
 main > hr {
     margin: 0;
 }
@@ -256,9 +256,7 @@ footer p { color: var(--color-white) }
     display: flex;
     flex-wrap: wrap;
 }
-.secCol.reverse {
-    flex-direction: row-reverse;
-}
+.secCol.reverse { flex-direction: row-reverse; }
 .secCol > div {
     flex: 1 1 20rem; /* New line when out of space */
     width: 100%;

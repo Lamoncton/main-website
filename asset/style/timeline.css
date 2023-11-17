@@ -1,0 +1,40 @@
+/* To show a horizontal-scroll timeline
+<section class="timeline">
+    <div>
+        <div class="content">
+            <h3>A</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium consectetur quia iste sit voluptas illo veniam reprehenderit repudiandae culpa pariatur incidunt, soluta maiores tenetur quo! Atque voluptates facere consectetur enim.</p>
+        </div>
+        <div class="time">
+            <span>&#x25BC;</span>
+            <p>2010</p>
+        </div>
+    </div>
+</section>
+*/
+.timeline {
+    --content-width: 20rem;
+    width: 100%;
+    overflow-x: auto;
+    display: flex;
+}
+.timeline > div {
+    flex: 0 0 var(--content-width);
+    align-self: flex-end;
+}
+.timeline .content {
+    margin: 0 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: var(--color-gray);
+}
+.timeline .time {
+    text-align: center;
+}
+.timeline .time p {
+    margin-top: 0;
+    text-align: center;
+    font-size: x-large;
+    background: var(--color-priD);
+    color: var(--antiflash-white);
+}

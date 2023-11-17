@@ -1,3 +1,16 @@
+/* A flipcard that flips when being hover
+<div class="flip-card curCen">
+    <div class="inner" style="background-color: var(--color-green);">
+        <div class="front">
+            <h2>curCen1_heading</h2>
+            <p><i>curCen1_para</i></p>
+        </div>
+        <div class="back">
+            <ul>curCen1_list</ul>
+        </div>
+    </div>
+</div>
+ */
 /* Inherit settings */
 .flip-card {
     height: fit-content;
