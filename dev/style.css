@@ -1,5 +1,7 @@
 /* Separate into a file as an example */
 code {
+    border-radius: 0.25rem;
+    background-color: var(--color-gray);
     color: var(--color-red);
     white-space: pre;
 }

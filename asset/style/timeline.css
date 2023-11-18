@@ -3,7 +3,7 @@
     <div>
         <div class="content">
             <h3>A</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium consectetur quia iste sit voluptas illo veniam reprehenderit repudiandae culpa pariatur incidunt, soluta maiores tenetur quo! Atque voluptates facere consectetur enim.</p>
+            <p>test</p>
         </div>
         <div class="time">
             <span>&#x25BC;</span>
@@ -35,6 +35,6 @@
     margin-top: 0;
     text-align: center;
     font-size: x-large;
-    background: var(--color-priD);
+    background: var(--color-priB);
     color: var(--antiflash-white);
 }

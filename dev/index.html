@@ -5,8 +5,28 @@
     <!-- Don't crawl this page -->
     <meta name="robots" content="noindex">
 
-    <!-- Example of how the html-src is inserted -->
+    <!-- Example of how the html-src is prepended -->
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="/asset/style/flip-card.css">
+    <link rel="stylesheet" href="/asset/style/timeline.css">
+
+    <link rel="stylesheet" href="/asset/style/slideshow.css">
+    <script src="/asset/script/slideshow.js"></script>
+
+    <style>
+        @media (min-width: 50rem) {
+            .flip-card.curCen { height: 20rem; }
+        }
+    </style>
+    <script>
+        // Add slideshow
+        slideshows.welcomeBanner = {
+            images: [
+                '/asset/image/horse.jpg',
+                '/asset/image/IMG_1093.png',
+            ]
+        }
+    </script>
 </head>
 <body>
     <header html-src="/comp/header.html"></header>
@@ -16,15 +36,20 @@
             <p>However, real notification should be put in <code>/comp/notification</code>. Style in notification can be edited in .notification</p>
         </section>
 
-        <section class="secBgImg" style="background-image: url(https://cdn.discordapp.com/attachments/1064092743745409034/1066626612424085514/2023-01-21_23.03.55.png);">
+        <section
+            id="welcomeBanner"
+            class="secBgImg"
+            style="background-image: url(/asset/image/IMG_1093.png);"
+        >
             <div>
-                <h1>Page for developers</h1>
+                <h1>Welcome to the page for developers!</h1>
+                <p>This is an example of a slideshow, which requires <code>/asset/style/slideshow.css</code> and <code>/asset/script/slideshow.js</code>. After initializing the slideshow script, you need need to add an array of the background links to the <code>slideshows.&lt;slideElementID&gt;</code>.</p>
             </div>
         </section>
 
         <h1>Front-end</h1>
         <details>
-            <summary>Flex box wit column layout</summary>
+            <summary>Flex box with column layout</summary>
             <section class="secCol">
                 <div>
                     <h1>.secCol</h1>
@@ -35,6 +60,79 @@
                 </div>
                 <div>
                     <img src="https://cdn.discordapp.com/attachments/1075495496560410655/1136306010542325770/map.png" alt="">
+                </div>
+            </section>
+        </details>
+
+        <details>
+            <summary>Flip cards</summary>
+            <p>Requires <code>/asset/style/flip-card.css</code></p>
+            <section class="secCol secAlignStart noPadding">
+                <div class="flip-card curCen">
+                    <div class="inner" style="background-color: var(--color-green);">
+                        <div class="front">
+                            <h2>This is a flip card with data behind it</h2>
+                            <p><i>However, you need to manually set the height of the flipcards</i></p>
+                        </div>
+                        <div class="back">
+                            <p>It also requires to be covered in an element with classes <code>secCol secAlignStart noPadding</code></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card curCen">
+                    <div class="inner"" style="background-color: var(--color-red);">
+                        <div class="front">
+                            <h2>When on a smaller screen, the flip cards will no longer requires user inputs but instead displays information traditionally</h2>
+                            <p><i>This is to prevent users from needing to tap on the cards on small-screen devices</i></p>
+                        </div>
+                        <div class="back">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates fugit maiores blanditiis suscipit magnam cupiditate sit doloremque veniam culpa a rem delectus ipsam eum rerum, laboriosam alias voluptatum error eveniet.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </details>
+
+        <details>
+            <summary>Horizontal-scroll boxes</summary>
+            <p>Remember to import <code>/asset/style/timeline.css</code></p>
+            <section class="timeline">
+                <div>
+                    <div class="content">
+                        <h3>Usage</h3>
+                        <p>This is used to put multiple element in a horizontal scroll box.</p>
+                    </div>
+                    <div class="time">
+                        <span>&#x25BC;</span>
+                        <p>2010</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="content">
+                        <p>It will automatic allign to the timeline!</p>
+                    </div>
+                    <div class="time">
+                        <span>&#x25BC;</span>
+                        <p>2010</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="content">
+                        <p>Or you can even remove the timeline entirely!</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="time">
+                        <p>or an empty line!</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="content">
+                        <p>Or no arrow in this case</p>
+                    </div>
+                    <div class="time">
+                        <p>2010</p>
+                    </div>
                 </div>
             </section>
         </details>
@@ -101,7 +199,7 @@
         <p>Translation requires you to build the website with the build script.</p>
         <p>In each folder, there will be an <code>index.html</code> files to dictate the layout and the translation keys. In each folder, there will be <code>.json</code> files with language code.</p>
         <p>Translation keys will be replaced with translated content in that perspective language, then put into the correct folder according to the key <code>URL</code>. Translation key should be in English.</p>
-        <p>Because the replace is pure plain text, it is recommened to put translation key inside <code>&gt;translationKey&smt;</code> for keys with confusable name. The best practice is to name keys with long enough snake_case name. Snake case is to prevent conflict with CSS camel case.</p>
+        <p>Because the replace is pure plain text, it is recommened to put translation key inside <code>&gt;translationKey&lt;</code> for keys with confusable name. The best practice is to name keys with long enough snake_case name. Snake case is to prevent conflict with CSS camel case.</p>
         <p>A certain control key will be ignored (like <code>URL</code>)</p>
         <p>transContent</p>
 
