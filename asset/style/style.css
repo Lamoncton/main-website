@@ -126,6 +126,10 @@ nav * { font-family: var(--font-heading); }
     text-align: center;
 }
 #navLinks a:hover { background-color: var(--color-priB); }
+#navLang {
+    flex: 0 1 3rem;
+    text-transform: uppercase;
+}
 
 main { padding-top: 3rem; }
 main > hr { margin: 0; }
