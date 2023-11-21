@@ -36,11 +36,6 @@ a {
     /* color: var(--color-fg); */
 }
 
-address a {
-    color: var(--color-fg);
-    text-decoration: underline;
-}
-
 article {
     /* Generous padding for long text */
     padding: 0 10rem;
@@ -153,8 +148,11 @@ main > hr {
 footer {
     display: flex;
     flex-wrap: wrap;
-    padding: 1rem;
     background-color: var(--color-priD);
+}
+footer a {
+    color: var(--color-fg);
+    text-decoration: none;
 }
 footer > div {
     flex: 1 1 20rem;
@@ -170,7 +168,7 @@ footer > div {
 #footerLogo > img {
     margin: auto;
     height: 3rem
- }
+}
 footer h3 { color: var(--color-green) }
 footer p { color: var(--color-white) }
 
