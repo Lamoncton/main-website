@@ -1,6 +1,4 @@
-* {
-    box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 :root {
     --lapis-lazuli: #1a6192ff;
@@ -93,9 +91,7 @@ html {
     font-size: var(--font-size);
 }
 
-body {
-    margin: 0;
-}
+body { margin: 0; }
 
 nav {
     position: fixed;
@@ -110,20 +106,13 @@ nav {
     background-color: var(--color-secB);
 }
 nav * { font-family: var(--font-heading); }
-nav > div {
-    /* Important to overdrive class */
-    padding: 0 !important;
-}
-
 #navLogo {
     flex-grow: 0;
     flex-basis: 3rem;
 }
-#navLogo img {
-    width: 3rem !important;
-    display: block;
-}
+#navLogo img { display: block; }
 #navLinks {
+    padding: 0 !important;
     display: flex;
 }
 #navLinks a {
@@ -136,14 +125,10 @@ nav > div {
     width: 100%;
     text-align: center;
 }
-#navLinks a:hover {
-    background-color: var(--color-priB);
-}
+#navLinks a:hover { background-color: var(--color-priB); }
 
 main { padding-top: 3rem; }
-main > hr {
-    margin: 0;
-}
+main > hr { margin: 0; }
 
 footer {
     display: flex;
@@ -193,9 +178,7 @@ footer p { color: var(--color-white) }
 .secBox { background-color: var(--color-gray); }
 .secBox h1,
 .secBox h2 { color: var(--color-priB); }
-.secBox hr {
-    margin: 2rem 0;
-}
+.secBox hr { margin: 2rem 0; }
 
 .portal {
     /* Portal-like container */
@@ -215,9 +198,7 @@ footer p { color: var(--color-white) }
     background-color: var(--color-red);
     padding: 1rem;
 }
-.notification:empty {
-    display: none;
-}
+.notification:empty { display: none; }
 
 .secAlignStart div {
     /* section with long text */
