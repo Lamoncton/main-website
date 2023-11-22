@@ -18,3 +18,10 @@ function getCookie(cname) {
     }
     return "";
 }
+
+function displayMenu() {
+    let navLinks = document.getElementById('navLinks');
+    // If there is display, then remove; if not, add flex
+    navLinks.style.display =
+        navLinks.style.display? '' : 'flex';
+}

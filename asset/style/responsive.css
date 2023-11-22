@@ -1,4 +1,22 @@
 @media (max-width: 40rem) {
+    nav {
+        align-items: stretch;
+    }
+    #navLinks {
+        display: none;
+        flex-direction: column;
+        flex-grow: 3;
+    }
+    #navMenu {
+        display: block;
+        flex-grow: 1;
+    }
+
+    #footerLogo {
+        /* Make the other element to new line */
+        flex-basis: 40rem;
+    }
+
     .secCol > div > img.borRouTL,
     .secCol > div > img.borRouTR,
     .secCol > div > img.borRouBR,
@@ -7,10 +25,5 @@
         Todo: change so that is can remove at the same time when the layout
         switch vertically because of flex-basis */
         border-radius: 0;
-    }
-
-    #footerLogo {
-        /* Make the other element to new line */
-        flex-basis: 40rem;
     }
 }
