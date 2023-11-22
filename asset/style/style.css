@@ -115,20 +115,25 @@ nav * { font-family: var(--font-heading); }
     padding: 0 !important;
     display: flex;
 }
-#navLinks a {
+#navLinks a,
+#navMenu {
     display: block;
     text-decoration: none;
     color: var(--color-priD);
     align-items: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    width: 100%;
     text-align: center;
 }
-#navLinks a:hover { background-color: var(--color-priB); }
+#navLinks a:hover,
+#navMenu:hover { background-color: var(--color-priB); }
+#navLinks a { width: 100%; }
 #navLang {
     flex: 0 1 3rem;
     text-transform: uppercase;
+}
+#navMenu {
+    display: none;
 }
 
 main { padding-top: 3rem; }
