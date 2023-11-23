@@ -40,12 +40,9 @@ article {
 }
 
 button {
-    border-radius: 1rem;
     border: 0px solid var(--color-priB);
     cursor: pointer;
-    background-color: var(--color-priD);
-    font-family: var(--font-family);
-    font-size: var(--font-size);
+    /* #buttonA will contains more settings */
 }
 
 details {
@@ -188,14 +185,16 @@ footer p { color: var(--color-white) }
 .borRouBR { border-bottom-right-radius: 1rem; }
 .borRouBL { border-bottom-left-radius: 1rem; }
 
+button,
 .buttonA {
-    /* Button-like links */
+    /* Button-like links, ensure consistency */
     /* display: block; interesting consideration */
     border-radius: 1rem;
     padding: 0.5rem;
     background-color: var(--color-secB);
     text-decoration: none;
 }
+button:hover,
 .buttonA:hover {
     background-color: var(--color-priB);
 }
