@@ -1,0 +1,71 @@
+<!-- Basic page template -->
+<!DOCTYPE html>
+<html lang="lang_code">
+<head html-src="/comp/head.html">
+    <style>
+        #category {
+            justify-content: space-around;
+            background-color: var(--color-secD);
+        }
+        #category a {
+            margin: 0.5rem;
+            padding: 0.5rem;
+            background-color: transparent;
+        }
+        #category a:hover {
+            background-color: var(--color-white);
+        }
+
+        #infoBox {
+            justify-content: space-around;
+            background-color: var(--color-priD);
+        }
+        #infoBox div.secBox {
+            margin: 1rem;
+            padding: 0;
+            border-radius: 1rem 0 1rem 0;
+            flex: 0 1 20rem;
+        }
+    </style>
+</head>
+<body>
+    <header html-src="/comp/header.html"></header>
+    <main html-src="/comp/notification.html">
+        <section class="secCol secAlignStart">
+            <div>
+                <h1>intro_h</h1>
+                <p>intro_p</p>
+            </div>
+            <div class="noPadding">
+                <img class="borRouBL" src="/asset/image/IMG_0393.jpg" alt="">
+            </div>
+        </section>
+
+        <section id="category" class="secCol">
+            <a class="buttonA" href="cat_btn_1a">cat_btn_1</a>
+            <a class="buttonA" href="cat_btn_1a">cat_btn_2</a>
+            <a class="buttonA" href="cat_btn_1a">cat_btn_3</a>
+            <a class="buttonA" href="cat_btn_1a">cat_btn_4</a>
+            <a class="buttonA" href="cat_btn_1a">cat_btn_5</a>
+            <a class="buttonA" href="cat_btn_1a">cat_btn_6</a>
+        </section>
+
+        <section id="infoBox" class="secCol">
+            <div class="secCol secBox">
+                <div class="noPadding">
+                    <img src="/asset/image/404.png" alt="">
+                </div>
+                <div>
+                    <h1>asasasasa</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ex, quo dolore praesentium inventore veniam in doloribus facilis assumenda a odit sint, magni tempora accusantium veritatis quasi amet mollitia porro.</p>
+                    <a class="buttonA" href="/">Back to home</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div html-src="/comp/signup.html"></div>
+    <footer html-src="/comp/footer.html"></footer>
+</body>
+</html>
+<script src="/asset/script/script.js"></script>
+<script src="/Static-Wind/preview.js"></script>
