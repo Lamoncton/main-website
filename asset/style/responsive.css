@@ -1,6 +1,29 @@
+@media (hover: none) {
+    #navLinks > button {
+        background-color: var(--color-priB);
+    }
+    #navLinks > button > div {
+        display: inherit;
+    }
+    #touchFocus {
+        z-index: 0;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 75%;
+        background-color: var(--color-gray);
+        display: none;
+    }
+}
+
 @media (max-width: 40rem) {
     nav {
         align-items: stretch;
+    }
+    nav button div {
+        position: relative;
     }
     #navLinks {
         display: none;
