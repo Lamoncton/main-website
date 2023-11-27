@@ -122,8 +122,11 @@ nav button:hover { background-color: var(--color-priB); }
 nav button div {
     position: absolute;
     background-color: inherit;
-    width: 10rem;
     display: none;
+}
+nav button div a {
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 nav button div a:hover {
     background-color: var(--color-priD);
@@ -137,11 +140,8 @@ nav button:hover div {
     flex-basis: 3rem;
 }
 #navLogo img { display: block; }
-#navLinks {
-    display: flex;
-}
-
-#navLinks a,
+#navLinks { display: flex; }
+#navLinks > a,
 #navLinks button { width: 100%; }
 #navLinks button {
     /* Padding due to existing padding from .buttonA */
