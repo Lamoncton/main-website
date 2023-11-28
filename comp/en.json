@@ -1,3 +1,23 @@
 {
+    "nav_home_url": "/home",
+    "nav_home_trans": "home",
+    "nav_about_url": "/about",
+    "nav_about_trans": "About us",
+    "nav_importance_url": "/importance",
+    "nav_importance_trans": "Importance",
+    "nav_programs_url": "/program",
+    "nav_programs_trans": "Program",
+    "nav_menu_trans": "Menu",
 
+    "noti_heading": "",
+    "noti_content": "",
+
+    "imgMsg_heading": " Enroll into our program",
+    "imgMsg_para": "Find a school",
+
+    "footer_contact_h": "CONTACT US",
+    "footer_contact_address": "87 street number 14, Linh Chieu Ward, Thu Duc city, Ho Chi Minh city, Vietnam",
+
+    "footer_partner_h": "BECOME A FRANCHISE PARTNER",
+    "footer_partner_p": "We are finding competent partners to multiply CaKids Franchising System in Vietnam and beyond. If you want to know more about this fascinating opportunity, click the button below."
 }
