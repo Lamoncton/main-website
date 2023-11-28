@@ -3,10 +3,10 @@
     "nav_home_trans": "Home",
     "nav_about_url": "/about",
     "nav_about_trans": "About us",
-    "nav_importance_url": "/importance",
+    "nav_importance_url": "/about/importance",
     "nav_importance_trans": "Importance",
-    "nav_programs_url": "/program",
-    "nav_programs_trans": "Program",
+    "nav_program_url": "/about/program",
+    "nav_program_trans": "Program",
     "nav_menu_trans": "Menu",
 
     "noti_heading": "",

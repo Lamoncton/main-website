@@ -3,10 +3,10 @@
     "nav_home_trans": "Trang chủ",
     "nav_about_url": "/ve-chung-toi",
     "nav_about_trans": "Về chúng tôi",
-    "nav_importance_url": "/tam-quan-trong",
+    "nav_importance_url": "/ve-chung-toi/tam-quan-trong",
     "nav_importance_trans": "Tầm quan trọng",
-    "nav_programs_url": "/chuong-trinh",
-    "nav_programs_trans": "Chương trình",
+    "nav_program_url": "/ve-chung-toi/chuong-trinh",
+    "nav_program_trans": "Chương trình",
     "nav_menu_trans": "Menu",
 
     "noti_heading": "",
