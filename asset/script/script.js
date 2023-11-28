@@ -20,8 +20,11 @@ function getCookie(cname) {
 }
 
 function displayMenu() {
-    let navLinks = document.getElementById('navLinks');
+    let navLinks = document.getElementById('navLinks'),
+        touchFocus = document.getElementById('touchFocus');
     // If there is display, then remove; if not, add flex
     navLinks.style.display =
         navLinks.style.display? '' : 'flex';
+    touchFocus.style.display =
+        touchFocus.style.display? '' : 'block';
 }
