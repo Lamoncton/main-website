@@ -1,11 +1,13 @@
 {
     "nav_home_url": "/trang-chu",
     "nav_home_trans": "Trang chủ",
-    "nav_about_url": "/ve-chung-toi",
-    "nav_about_trans": "Về chúng tôi",
-    "nav_importance_url": "/ve-chung-toi/tam-quan-trong",
-    "nav_importance_trans": "Tầm quan trọng",
-    "nav_program_url": "/ve-chung-toi/chuong-trinh",
+    "nav_about_url": "/thong-diep",
+    "nav_about_trans": "Thông điệp",
+    "nav_importance_url": "/thong-diep/tam-quan-trong",
+    "nav_importance_trans": "Tầm quan trọng của giáo dục mầm non không giới hạn cho trẻ",
+    "nav_method_url": "/thong-diep/phuong-phap",
+    "nav_method_trans": "Phương pháp",
+    "nav_program_url": "/thong-diep/chuong-trinh",
     "nav_program_trans": "Chương trình",
     "nav_menu_trans": "Menu",
 
